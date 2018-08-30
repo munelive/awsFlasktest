@@ -15,7 +15,7 @@ def not_found(error):
 #init
 @app.route('/', methods=['POST','GET'])
 def init():
-    print('With flask2')
+    print('With flask4')
     return 'App connections with: 1. /webhookasana: To connect asana to todoist /// 2. /webhooktodoist: To connect Todoist to asana'
 
 
