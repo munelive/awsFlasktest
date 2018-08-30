@@ -3,7 +3,7 @@ from flask import Flask
 #-------------------------------------------------------
 #Setup flask
 app = Flask(__name__)
-PORT = 5000
+PORT = 8000
 DEBUG = True
 
 @app.errorhandler(404)
