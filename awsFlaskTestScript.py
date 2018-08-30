@@ -4,7 +4,7 @@ from flask import Flask
 #Setup flask
 app = Flask(__name__)
 PORT = 5000
-DEBUG = True
+DEBUG = False
 
 @app.errorhandler(404)
 def not_found(error):
