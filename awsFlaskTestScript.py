@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 #-------------------------------------------------------
 #Setup flask
@@ -20,7 +20,25 @@ def init():
     return 'App connections with: 1. /webhookasana: To connect asana to todoist /// 2. /webhooktodoist: To connect Todoist to asana'
 
 
+#-------------------------------------------------------
+#webhook Asana To Todoist (create a task in Asana -> Create task in Todoist)
+@app.route('/createwebhookasana', methods=['POST','GET'])
+def createwebhookasana():
+    dat = request.headers
+    print(str(dat))
+    xhook = request.headers['X-Hook-Secret']
 
+    print(xhook)
+    #xhook = request.form['X-Hook-Secret']
+    #url = request.form['target']
+    #r=requests.post("https://09ffd427.ngrok.io/webhookasana")
+    #r = requests.post(str(url))
+    #print(r.content)
+    #request.headers.get(str(xhook))
+    #return(str(xhook)+ ' ' + str(url))
+    #return(r.headers)
+
+    return(xhook)
 
 
 
