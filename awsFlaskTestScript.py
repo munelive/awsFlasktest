@@ -5,7 +5,7 @@ import json
 #-------------------------------------------------------
 #Setup flask
 app = Flask(__name__)
-PORT = 8000
+PORT = 8080
 DEBUG = True
 HOST = '0.0.0.0'
 
