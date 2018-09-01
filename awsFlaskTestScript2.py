@@ -7,10 +7,11 @@ PORT = 80
 DEBUG = True
 HOST = '0.0.0.0'
 
+"""
 @app.errorhandler(404)
 def not_found(error):
     return "Not Found."
-
+"""
 
 #-------------------------------------------------------
 #init
@@ -27,5 +28,7 @@ def init():
 
 #-------------------------------------------------------
 if __name__ == '__main__':
+    """
     #app.run(host = HOST, port = PORT, debug = DEBUG)
+    """
     app.run(host = HOST, port = PORT)
