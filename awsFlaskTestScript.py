@@ -24,6 +24,7 @@ def init():
 #webhook Asana To Todoist (create a task in Asana -> Create task in Todoist)
 @app.route('/createwebhookasana', methods=['POST','GET'])
 def createwebhookasana():
+    print('starthook')
     dat = request.headers
     print(str(dat))
     xhook = request.headers['X-Hook-Secret']
