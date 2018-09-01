@@ -3,7 +3,7 @@ from flask import Flask
 #-------------------------------------------------------
 #Setup flask
 app = Flask(__name__)
-PORT = 9000
+PORT = 80
 DEBUG = True
 HOST = '0.0.0.0'
 
